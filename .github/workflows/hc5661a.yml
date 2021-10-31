@@ -54,7 +54,7 @@ jobs:
           wget -P user/xray/ https://raw.githubusercontent.com/felix-fly/v2ray-padavan-doh/master/padavan/xray/Makefile
           sed -i 's/CONFIG_FIRMWARE_INCLUDE_V2RAY=y/CONFIG_FIRMWARE_INCLUDE_V2RAY=n/' configs/templates/HC5661A.config
           sed -i 's/CONFIG_FIRMWARE_INCLUDE_XRAY=n/CONFIG_FIRMWARE_INCLUDE_XRAY=y/' configs/templates/HC5661A.config
-          fakeroot ./build_firmware_modify HC5661A.
+          fakeroot ./build_firmware_modify HC5661A
           mv /opt/rt-n56u/trunk/images/*.trx /opt/bin/HC5661A_xray.trx
       - name: Upload artifact
         uses: "marvinpinto/action-automatic-releases@latest"
