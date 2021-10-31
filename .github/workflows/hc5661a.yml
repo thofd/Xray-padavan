@@ -1,4 +1,4 @@
-name: Build Padavan
+name: Build Padavan Xray
 on: 
   release:
     types: [published]
