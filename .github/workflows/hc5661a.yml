@@ -62,4 +62,4 @@ jobs:
         if: always()
         with:
           name: Padavan-xray
-          path: /opt/images
+          path: /opt/bin
